@@ -41,14 +41,16 @@ class MainActivity : AppCompatActivity() {
         nextPage.setOnClickListener{
             val intent = Intent(this,displayPage::class.java)
 
-            //retrieve the code
+            //retrieve the code in string
             val weight = weightText.text.toString()
             val height = heightText.text.toString()
 
-            //putExtra function is to retrieve back the passed variable
-            intent.putExtra("WEIGHT", weight)
-            intent.putExtra("HEIGHT", height)
-            startActivity(intent)
+            if (validateInput(weight, height)){
+                //putExtra function is to retrieve back the passed variable
+                intent.putExtra("WEIGHT", weight)
+                intent.putExtra("HEIGHT", height)
+                startActivity(intent)
+            }
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
