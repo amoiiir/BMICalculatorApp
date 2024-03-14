@@ -2,10 +2,10 @@
 Simple BMI calculator app built using Android Studio
 
 ## App interface
-[!landing page]()
+[!landing page](https://github.com/amoiiir/BMICalculatorApp/blob/main/bmi.png)
 The landing page for this application
 
-[!working demo]()
+[!working demo](https://github.com/amoiiir/BMICalculatorApp/blob/main/bmi1.png)
 User can key in their weight and height and this will be calculated using below formula
 
 ```
